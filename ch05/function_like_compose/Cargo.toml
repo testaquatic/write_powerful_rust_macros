@@ -1,0 +1,7 @@
+[package]
+name = "function_like_compose"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+function_like_compose_macro ={ path = "./function_like_compose_macro"}
