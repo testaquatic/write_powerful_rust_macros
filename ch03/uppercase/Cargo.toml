@@ -1,0 +1,7 @@
+[package]
+name = "uppercase"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+uppercase_macro = { path = "./uppercase_macro" }
