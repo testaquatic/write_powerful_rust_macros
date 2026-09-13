@@ -1,0 +1,11 @@
+[package]
+name = "make-public"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+make-public-macro = { path = "./make-public-macro" }
+make-public-macro_field_unnamed = { path = "./make-public-macro_field_unnamed/" }
+make-public-macro2 = { path = "./make-public-macro2" }
+make-public-macro3 = { path = "./make-public-macro3/" }
+make-public-macro4 = { path = "./make-public-macro4/" }
