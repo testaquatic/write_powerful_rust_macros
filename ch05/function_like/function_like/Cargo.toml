@@ -1,0 +1,7 @@
+[package]
+name = "function_like"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+function_like_compose_macro.workspace = true

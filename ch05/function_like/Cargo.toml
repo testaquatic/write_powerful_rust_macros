@@ -1,0 +1,6 @@
+[workspace]
+resolver = "3"
+members = ["function_like", "function_like_compose_macro"]
+
+[workspace.dependencies]
+function_like_compose_macro = { path = "function_like_compose_macro" }
