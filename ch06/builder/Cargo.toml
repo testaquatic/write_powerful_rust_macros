@@ -1,0 +1,5 @@
+[workspace]
+resolver = "3"
+members = ["builder-code", "builder-macro", "builder-uasage"]
+
+[workspace.dependencies]
