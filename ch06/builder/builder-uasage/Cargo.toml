@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 builder-macro = { path = "../builder-macro/" }
+trybuild = "1.0.121"

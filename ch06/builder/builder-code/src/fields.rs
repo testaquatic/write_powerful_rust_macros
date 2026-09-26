@@ -4,7 +4,7 @@ use syn::{Field, Ident, Type, punctuated::Punctuated, token::Comma};
 
 pub fn original_struct_setters(
     fields: &Punctuated<Field, Comma>,
-) -> impl for<'a> Iterator<Item = TokenStream> {
+) -> impl Iterator<Item = TokenStream> {
     fields.iter().map(|f| {
         let field_name = &f.ident;
         let field_name_as_string = field_name.as_ref().unwrap().to_string();
@@ -17,7 +17,7 @@ pub fn original_struct_setters(
 
 pub(crate) fn builder_field_definition(
     fields: &Punctuated<Field, Comma>,
-) -> impl for<'a> Iterator<Item = TokenStream> {
+) -> impl Iterator<Item = TokenStream> {
     fields.iter().map(|f| {
         let (name, f_type) = get_name_and_type(f);
         quote! {pub #name: Option<#f_type>}
@@ -47,7 +47,7 @@ pub(crate) fn builder_methods(
     })
 }
 
-fn get_name_and_type<'a>(f: &'a Field) -> (&'a Option<Ident>, &'a Type) {
+fn get_name_and_type(f: &Field) -> (&Option<Ident>, &Type) {
     let field_name = &f.ident;
     let field_type = &f.ty;
 
