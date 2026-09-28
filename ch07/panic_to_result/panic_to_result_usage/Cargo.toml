@@ -1,0 +1,7 @@
+[package]
+name = "panic_to_result_usage"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+panic_to_result_macro.workspace = true

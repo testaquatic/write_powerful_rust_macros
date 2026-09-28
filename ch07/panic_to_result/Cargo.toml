@@ -1,0 +1,6 @@
+[workspace]
+resolver = "3"
+members = ["panic_to_result_macro/", "panic_to_result_usage/"]
+
+[workspace.dependencies]
+panic_to_result_macro = { path = "./panic_to_result_macro" }
